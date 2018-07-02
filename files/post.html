@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+    <head>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/css/mdb.min.css" rel="stylesheet">
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/post.css">
+    <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon">
+    <link rel="manifest" href="manifset.json">
+    
+    
+    <title>K.F.C</title>
+</head>
+<body onload="getAdds()">
+<style>
+    
+#addpost{
+    
+    margin:  0 auto;
+     margin-top: 2%;
+     margin-left: 1%;
+     margin-right: 1%;
+     box-shadow: 0 8px 16px 0 rgba(112, 111, 111, 0.2);
+     display: inline-block;
+     /* background-color: 0 8px 16px 0 rgba(0,0,0,0.2); */
+     width: 30%;
+     height: 500px;
+     /* background-color: rgb(216, 212, 212); */
+     
+     border-radius: 5px;
+ }
+ #addpost:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  img{
+  width: 100%;
+ }
+ 
+ 
+  .cardfooter{
+     padding:  2px 16px ;
+     /* background-color: rgb(233, 241, 241); */
+     /* display: inline-block; */
+ 
+ }
+ .cardfooter .name{
+     font-size: 20px;
+ }
+ @media(max-width:  425px){
+     
+ #addpost{
+     
+     margin:  0 auto;
+      margin-top: 2%;
+      margin-left: 1%;
+      margin-right: 1%;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      display: block;
+      margin-left: 30%;
+      margin-right: 30%;
+      width: 50%;
+      height: 500px;
+      /* background-color: rgb(216, 212, 212); */
+      
+      border-radius: 5px;
+  }
+  #addpost:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+   img{
+   width: 100%;
+  }
+  .cardfooter{
+      padding:  2px 16px ;
+      display: block;
+  
+  }
+  .cardfooter .name{
+      font-size: 20px;
+  
+     }
+ }
+    </style>
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand" href="../index.html">
+                <strong>A1 seller</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id=" btnHome" style="visibility: hidden" id="logout" onclick="logOut()">log out
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opinions</a>
+                     </li> -->
+                </ul>
+                <ul class="  navbar-nav nav-flex-icons">
+
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li><a class="nav-link" href="#"  id="logout" onclick="logOut()"><i class="fa fa-instagram"></i> log out <span class="sr-only">(current)</span></a>
+                    
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <div class="active-purple-3 active-purple-4 mb-4">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput" onkeyup="search()">
+        </div>
+        <!-- <div id="bgimg"> -->
+        <!-- <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515"> -->
+            <!-- <div class="full-bg-img"> -->
+                <!-- <div class="container flex-center"> -->
+                <!-- <div class="row pt-5 mt-3"> -->
+                    <!-- <div class="col-md-12"> -->
+                <!-- /        <div class="text-center"> -->
+                            <!-- <p>fks</p> -->
+                            <br>
+
+                            <div class="container" id="addpostdata">
+                                
+                                    <!-- <img src="../images/c.jpg" alt="c" >
+                                <div class="cardfooter">
+                                    <b class="name">Muhammad Imran</b>
+                                    <p>This is Muhammad Sarim.</p>
+                            </div> -->
+                            </div>
+                           
+                           
+                            
+                           
+
+                            <br>
+                            <br>
+                            <!-- <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInLeft" data-wow-delay="0.3s"><strong>Welcome to KFC</strong></h1>
+                              <hr class="hr-light mt-4 wow fadeInLeft" data-wow-delay="0.4s">
+                              <h5 class="text-uppercase mb-5 white-text wow fadeInLeft" data-wow-delay="0.4s"><strong>login with google </strong></h5> -->
+                            <a href="../index.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
+                                <i class="fa fa-home" aria-hidden="true"></i> home</a>
+                            <a href="login.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
+                                <i class="fa fa-home" aria-hidden="true"></i> register</a>
+                            <a href="submit.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s" id="register">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Submit Add </a>
+
+<!-- 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </header>
+            </div>
+    <!--Main Navigation-->
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                    .then(function () {
+                        console.log('Service Worker Registered');
+                    });
+            }
+        </script>
+    <!--Main Layout-->
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAurQAta-dWOkwJez2Td2t-ePAYvY8kvuA",
+            authDomain: "practice-hackaton.firebaseapp.com",
+            databaseURL: "https://practice-hackaton.firebaseio.com",
+            projectId: "practice-hackaton",
+            storageBucket: "practice-hackaton.appspot.com",
+            messagingSenderId: "834416971862"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script src="../script/register.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/submit.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/css/mdb.min.css" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/submit.css">
+    <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon">
+    <link rel="manifest" href="manifset.json">
+
+
+    <title>A1 Seller</title>
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand" href="../index.html">
+                <strong>A1 seller</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id=" btnHome" style="visibility: hidden" ; id="logout" onclick="logOut()">log out
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opinions</a>
+                     </li> -->
+                </ul>
+                <ul class="  navbar-nav nav-flex-icons">
+
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <!-- <a class="nav-link" href="#" id=" btnHome" id="logout" onclick="logOut()"><i class="fa fa-instagram"></i> log out <span class="sr-only">(current)</span></a> -->
+                    <!-- </li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Intro Section -->
+        <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515">
+            <div class="full-bg-img">
+                <!-- <div class="container flex-center"> -->
+                <div class="row pt-5 mt-3">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <!-- <p>fks</p> -->
+                            <br>
+                            <!-- <br> -->
+
+
+
+
+                            <section class="form-simple col-md-6 offset-md-3 text-center targetls wow-fadeInLeft" data-wow-delay="0.3s">
+
+                                <div class="card targetcard wow-fadeInLeft" data-wow-delay="0.3s">
+
+                                    <!--Header-->
+                                    <div class="header pt-3 targeth3l wow-fadeInLeft" data-wow-delay="0.3s">
+
+                                        <div class="row d-flex justify-content-start ">
+                                            <h3 class="btn-lighten-1 mt-3 mb-4 pb-1 mx-5 font-weight-bold" id="logincontent">Submit An Add</h3>
+                                        </div>
+
+                                    </div>
+                                    <!--Header-->
+                                    <div id="snackbar"></div>
+<!-- Steps form -->
+<div class="card">
+        <div class="card-body mb-4">
+    
+            <!-- <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Steps form example</strong></h2> -->
+    
+            <!-- Stepper -->
+            <div class="steps-form">
+                <div class="steps-row setup-panel">
+                    <div class="steps-step">
+                        <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
+                        <p>Step 1</p>
+                    </div>
+                    <div class="steps-step">
+                        <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                        <p>Step 2</p>
+                    </div>
+                    <div class="steps-step">
+                        <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                        <p>Step 3</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form role="form" action="" method="post">
+    
+                <!-- First Step -->
+                <div class="row setup-content" id="step-9">
+                    <div class="col-md-12">
+                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 1</strong></h3> -->
+                        <div class="form-group md-form">
+                            <label for="submitname" data-error="wrong" data-success="right">product Name</label>
+                            <input id="submitname" type="text" required="required" class="form-control validate" required>
+                        </div>
+                   
+                        
+
+                        <div class="form-group md-form mt-3">
+                                <label for="submitnumber" data-error="wrong" data-success="right">Contact number</label>
+                                <input id="submitnumber" type="number" required="required" class="form-control validate" required>
+                            </div>
+                        
+                            <div class="form-group md-form">
+                                    <label for="submittitle" data-error="wrong" data-success="right">Product Title</label>
+                                    <input id="submittitle" type="text" required="required" class="form-control validate" required>
+                                </div>
+                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()">Next</button>
+                    </div>
+                </div>
+    
+                <!-- Second Step -->
+                <div class="row setup-content" id="step-10">
+                    <div class="col-md-12">
+                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 2</strong></h3> -->
+                        
+                        <div class="form-group md-form mt-3">
+                                <label for="submitprice" data-error="wrong" data-success="right">Add Price</label>
+                                <input id="submitprice" type="number" required="required" class="form-control validate" required>
+                            </div>
+                        <select class="mdb-select btn-block" id="submitcategory" required>
+                                <option value="" disabled selected>Select Your Category</option>
+                                <option value="Mobiles">Mobiles</option>
+                                <option value="Vehicles">Vehicles</option>
+                                <option value="Clothes">Clothes</option>
+                                <option value="Property">Property</option>
+                                <option value="Laptop">Laptop</option>
+                                <option value="Jobs">Jobs</option>
+                                <option value="Fans">Fans</option>
+                                <option value="Fridge">Fridge</option>
+                                <option value="Furniture">Furniture</option>
+                                <!-- <option value="Jobs">Jobs</option> -->
+                                
+                                
+                            </select>
+                            <div class="form-group md-form mt-3">
+                                <label for="submitmodel" data-error="wrong" data-success="right">Model & Year</label>
+                                <input id="submitmodel" type="number" required="required" class="form-control validate" required>
+                            </div>
+                            <!-- <label>Example label</label> -->
+                            <br>
+                        <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
+                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Next</button>
+                    </div>
+                </div>
+    
+                <!-- Third Step -->
+                <div class="row setup-content" id="step-11">
+                    <div class="col-md-12">
+                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 3</strong></h3> -->
+                        <div class="md-form">
+                                <!-- <i class="fa fa-pencil prefix"></i>  -->
+                                <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" required></textarea>
+                                <label for="submitdescription">Add Description</label>
+                            </div>
+                            <form class="md-form">
+                                    <div class="file-field">
+                                        <a class="btn-floating peach-gradient mt-0 float-left">
+                                            <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                            <input type="file" value="upload" id="submitfileButton">
+                                        </a>
+                                        <progress value="0" max="100" id="submituploader">0% </progress>
+                                        <span id="uploading"></span>
+                                  
+                                        
+                                    </div>
+                                </form>
+                                <!-- <br> -->
+                        <!-- <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button> -->
+                        <button class="btn btn-default btn-rounded float-right" type="submit">Submit</button>
+                    </div>
+                </div>
+    
+            </form>
+    
+        </div>
+    </div>
+    <!-- Steps form -->
+                                <!--/Form with header-->
+                            </section>
+                            <br>
+                            <!-- <br> -->
+                            <!-- <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInLeft" data-wow-delay="0.3s"><strong>Welcome to KFC</strong></h1>
+                              <hr class="hr-light mt-4 wow fadeInLeft" data-wow-delay="0.4s">
+                              <h5 class="text-uppercase mb-5 white-text wow fadeInLeft" data-wow-delay="0.4s"><strong>login with google </strong></h5> -->
+                            <a href="../index.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
+                                <i class="fa fa-home" aria-hidden="true"></i> home</a>
+                            <a href="login.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s" id="register">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i> register </a>
+                            <a href="post.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
+                                <i class="fa fa-home" aria-hidden="true"></i> post</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function () {
+                        console.log('Service Worker Registered');
+                    });
+            }
+        </script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAurQAta-dWOkwJez2Td2t-ePAYvY8kvuA",
+            authDomain: "practice-hackaton.firebaseapp.com",
+            databaseURL: "https://practice-hackaton.firebaseio.com",
+            projectId: "practice-hackaton",
+            storageBucket: "practice-hackaton.appspot.com",
+            messagingSenderId: "834416971862"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script src="../script/register.js"></script>
+    <script src="../script/submit.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</html>

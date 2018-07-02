@@ -1,0 +1,106 @@
+body{
+    /* background-color: #4f4f4f; */
+    text-transform: capitalize;
+    overflow: scroll;
+}
+.top-nav-collapse {
+    background-color: #78909c !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #78909c !important;
+    }
+}
+h1 {
+    letter-spacing: 8px;
+}
+h5 {
+    letter-spacing: 3px;
+}
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px;
+    }
+}
+#img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-position-y: 10%;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .targetcard{
+    background-color: transparent !important;
+    border: 2px solid white;
+  }
+  #loginemail{
+    color: white;
+  }
+ .targeth3l{
+   background-color: rgb(189, 184, 184); */
+  /* background-color: rgb(247, 67, 67);  */
+
+
+/* .loginbtn{ */
+    /* background-color: rgb(255, 106, 106) !important; */
+/* } */
+/* #loginemail
+{
+  color: white;
+}
+#loginpassword{
+  color: white;
+} */
+
+.form-simple .font-small {
+    font-size: 0.8rem; }
+  
+  .form-simple .header {
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem; }
+  
+  .form-simple input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #ff3547;
+    -webkit-box-shadow: 0 1px 0 0 #ff3547;
+    box-shadow: 0 1px 0 0 #ff3547; }
+  
+  .form-simple input[type=text]:focus:not([readonly]) + label {
+    color: #4f4f4f; }
+  
+  .form-simple input[type=password]:focus:not([readonly]) {
+    border-bottom: 1px solid #ff3547;
+    -webkit-box-shadow: 0 1px 0 0 #ff3547;
+    box-shadow: 0 1px 0 0 #ff3547; }
+  
+  .form-simple input[type=password]:focus:not([readonly]) + label {
+    color: #4f4f4f; }
+
+    .header{
+        background-color: #d4d1d1;
+    }
+
+    /* #bgimg{
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed; 
+    } */
+    /* #forwidth{
+        width: 200px;
+        height: 200px;
+    } */
+
