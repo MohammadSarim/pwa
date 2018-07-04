@@ -6,13 +6,14 @@ const staticAssets = [ "/",
     "script/submit.js",
     
     "style/submit.css",
-    "files/login.html",
-    "files/signup.html",
-    "files/post.html",
     "style/main.css",
     "style/register.css",
     "style/post.css",
     "style/submit.css",
+    "files/login.html",
+    "files/signup.html",
+    "files/post.html",
+    "files/submit.html",
     
     
     // "./pics/Shopping-Cart-PNG-Image-84606.png",
