@@ -134,22 +134,22 @@
                     <div class="col-md-12">
                         <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 1</strong></h3> -->
                         <div class="form-group md-form">
-                            <label for="submitname" data-error="wrong" data-success="right">product Name</label>
-                            <input id="submitname" type="text" required="required" class="form-control validate" required>
+                            <label for="submitname" data-error="wrong" data-success="right">your Name</label>
+                            <input id="submitname" type="text"  class="form-control validate" >
                         </div>
                    
                         
 
-                        <div class="form-group md-form mt-3">
+                        <!-- <div class="form-group md-form mt-3">
                                 <label for="submitnumber" data-error="wrong" data-success="right">Contact number</label>
-                                <input id="submitnumber" type="number" required="required" class="form-control validate" required>
-                            </div>
+                                <input id="submitnumber" type="number"  class="form-control validate" >
+                            </div> -->
                         
                             <div class="form-group md-form">
                                     <label for="submittitle" data-error="wrong" data-success="right">Product Title</label>
-                                    <input id="submittitle" type="text" required="required" class="form-control validate" required>
+                                    <input id="submittitle" type="text"  class="form-control validate" >
                                 </div>
-                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()">Next</button>
+                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" >Next</button>
                     </div>
                 </div>
     
@@ -160,9 +160,9 @@
                         
                         <div class="form-group md-form mt-3">
                                 <label for="submitprice" data-error="wrong" data-success="right">Add Price</label>
-                                <input id="submitprice" type="number" required="required" class="form-control validate" required>
+                                <input id="submitprice" type="number"  class="form-control validate" >
                             </div>
-                        <select class="mdb-select btn-block" id="submitcategory" required>
+                        <select class="mdb-select btn-block" id="submitcategory" >
                                 <option value="" disabled selected>Select Your Category</option>
                                 <option value="Mobiles">Mobiles</option>
                                 <option value="Vehicles">Vehicles</option>
@@ -177,14 +177,11 @@
                                 
                                 
                             </select>
-                            <div class="form-group md-form mt-3">
-                                <label for="submitmodel" data-error="wrong" data-success="right">Model & Year</label>
-                                <input id="submitmodel" type="number" required="required" class="form-control validate" required>
-                            </div>
+                            
                             <!-- <label>Example label</label> -->
                             <br>
                         <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
-                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Next</button>
+                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()" >Next</button>
                     </div>
                 </div>
     
@@ -192,30 +189,36 @@
                 <div class="row setup-content" id="step-11">
                     <div class="col-md-12">
                         <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 3</strong></h3> -->
-                        <div class="md-form">
+                        <!-- <div class="md-form"> -->
                                 <!-- <i class="fa fa-pencil prefix"></i>  -->
-                                <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" required></textarea>
+                                <!-- <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" ></textarea>
                                 <label for="submitdescription">Add Description</label>
-                            </div>
-                            <form class="md-form">
+                            </div> -->
+                            <!-- <form class="md-form"> -->
+                                    <div class="form-group md-form mt-3">
+                                            <label for="submitmodel" data-error="wrong" data-success="right">Model </label>
+                                            <input id="submitmodel" type="text"  class="form-control validate" >
+                                        </div>
                                     <div class="file-field">
                                         <a class="btn-floating peach-gradient mt-0 float-left">
                                             <i class="fa fa-paperclip" aria-hidden="true"></i>
                                             <input type="file" value="upload" id="submitfileButton">
                                         </a>
-                                        <progress value="0" max="100" id="submituploader">0% </progress>
-                                        <span id="uploading"></span>
+                                        <br>
+                                        <progress value="0" max="100" id="submituploader" onclick="ch()" > 0% </progress>
+                                            <br>
+                                        <a href="post.html" id="uploading"></a>
                                   
                                         
+                                        <!-- <br> -->
+                                        <!-- <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button> -->
+                                        <button class="btn btn-default btn-rounded float-right" type="submit" >Submit</button>
                                     </div>
-                                </form>
-                                <!-- <br> -->
-                        <!-- <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button> -->
-                        <button class="btn btn-default btn-rounded float-right" type="submit">Submit</button>
-                    </div>
+                                </div>
+                                <!-- </form> -->
                 </div>
     
-            </form>
+            <!-- </form> -->
     
         </div>
     </div>

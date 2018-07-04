@@ -67,7 +67,7 @@ let submitnumber= document.getElementById('submitnumber');
 var submitdescription = document.getElementById('submitdescription');
 var submitmodel= document.getElementById('submitmodel');
 // var x = document.getElementById('snackbar');
-// let uploading= document.getElementById('uploading');
+let uploading= document.getElementById('uploading');
 // let images = document.getElementById('images');
 
 if(submitname.length < 3 ){
@@ -194,17 +194,37 @@ submitfileButton.addEventListener("change", function (e) {
               var img = document.createElement('img');
               img.setAttribute("src" , image);
               addpost.appendChild(img);
-            var bname = document.createElement('b');
-              var bnamenode = document.createTextNode(d.Title);
-              bname.className = "name";
-              bname.appendChild(bnamenode);
-            //   addpost.appendChild(bname);
-              var pdetail = document.createElement('p');
-              var pdetailnode = document.createTextNode(d.Detail);
-              addpost.appendChild(pdetail);
-              pdetail.appendChild(pdetailnode);
-              addpost.appendChild(bname);
-                addpostdata.appendChild(addpost);
+              var footer = document.createElement('div');
+              footer.setAttribute("class" , "cardfooter");
+              var h4name = document.createElement('h4');
+              var h4namenode = document.createTextNode(d.Title);
+              h4name.className = "name";
+              h4name.appendChild(h4namenode);
+              footer.appendChild(h4name);
+            // var pdetail = document.createElement('p');
+            //   var pdetailnode = document.createTextNode(d.Model);
+            //   footer.appendChild(pdetail);
+            //   footer.appendChild(pdetailnode);
+              addpost.appendChild(footer);
+              addpostdata.appendChild(addpost);
+
+
+
+
+
+
+/* <img src="../images/c.jpg" alt="c" >
+                                <div class="cardfooter">
+                                   <h4 class="name"> <b >Muhammad Imran</b> </h4>
+                                    <p>This is Muhammad Sarim.</p>
+                                    <h5 class="category">category</h5>
+                                    <h5 class="category"> model</h5>
+                                    <hr>
+                                    <button></button>
+                                    <button></button>
+                                </div>
+ */
+
             //   divclass.appendChild(pdetail);
              
             
@@ -236,25 +256,25 @@ submitfileButton.addEventListener("change", function (e) {
                 }        
 
 
-                    function search(){
-        var search=document.getElementById("myInput").value.toUpperCase();
-        // var filter=search.toUpperCase();
-        var card=document.getElementsByClassName('card-img-top')[0];
-        var cardb=document.getElementsByClassName('card-body')[0];
+    //                 function search(){
+    //     var search=document.getElementById("myInput").value.toUpperCase();
+    //     // var filter=search.toUpperCase();
+    //     var card=document.getElementsByClassName('card-img-top')[0];
+    //     var cardb=document.getElementsByClassName('card-body')[0];
       
-        for(i=0;i<cardb.length;i++){
-      var h2=cardb[i].getElementsByTagName("h2")[0];
-      if(h2.innerHTML.toUpperCase().indexOf(search)>-1){
-        cardb[i].style.display="";
-        card[i].style.display="";
+    //     for(i=0;i<cardb.length;i++){
+    //   var h2=cardb[i].getElementsByTagName("h2")[0];
+    //   if(h2.innerHTML.toUpperCase().indexOf(search)>-1){
+    //     cardb[i].style.display="";
+    //     card[i].style.display="";
       
-      }
-      else{
-        cardb[i].style.display="none";
-        card[i].style.display="none"
-      }
-        }
-      }
+    //   }
+    //   else{
+    //     cardb[i].style.display="none";
+    //     card[i].style.display="none"
+    //   }
+    //     }
+    //   }
 
 
             //     var addpost = document.createElement('div');
