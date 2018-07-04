@@ -201,9 +201,10 @@ submitfileButton.addEventListener("change", function (e) {
               h4name.className = "name";
               h4name.appendChild(h4namenode);
               footer.appendChild(h4name);
-            // var pdetail = document.createElement('p');
-            //   var pdetailnode = document.createTextNode(d.Model);
-            //   footer.appendChild(pdetail);
+            var h6 = document.createElement('h6');
+              var h6node = document.createTextNode(d.Model);
+              h6.appendChild(h6node);
+                footer.appendChild(h6);
             //   footer.appendChild(pdetailnode);
               addpost.appendChild(footer);
               addpostdata.appendChild(addpost);
