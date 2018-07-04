@@ -13,11 +13,12 @@ function getAdds() {
             addpost.setAttribute("id", "addpost");
             var img = document.createElement('img');
             img.setAttribute("src", image);
+            // img.className = "img-fluid ";
             addpost.appendChild(img);
             var footer = document.createElement('div');
             footer.setAttribute("class", "cardfooter");
-            var h4name = document.createElement('h6');
-            var h4namenode = document.createTextNode(d.Name);
+            var h4name = document.createElement('h5');
+            var h4namenode = document.createTextNode(d.Title);
             h4name.className = "name";
             h4name.appendChild(h4namenode);
             footer.appendChild(h4name);
@@ -40,79 +41,75 @@ function getAdds() {
             footer.appendChild(model);
             var hr = document.createElement('hr');
             footer.appendChild(hr);
-            
-           var b = document.createElement('button');
-           b.setAttribute("id" , "icon");
+
+            var b = document.createElement('button');
+            b.setAttribute("id", "icon");
             var i = document.createElement('i');
-            i.className = "fa fa-heart-o" ;
+            i.className = "fa fa-heart";
             b.appendChild(i);
             footer.appendChild(b);
             var btn = document.createElement('button');
-            btn.setAttribute("id" , "iconchat");
+            btn.setAttribute("id", "iconchat");
             var ichat = document.createElement('i');
-            ichat.className = "fa fa-comment";
+            ichat.className = "fa fa-envelope";
             btn.appendChild(ichat);
             footer.appendChild(btn);
 
             addpost.appendChild(footer);
             addpostdata.appendChild(addpost);
-
-
-
-
-
-
-            /* <img src="../images/c.jpg" alt="c" >
-                                            <div class="cardfooter">
-                                               <h4 class="name"> <b >Muhammad Imran</b> </h4>
-                                                <p>This is Muhammad Sarim.</p>
-                                                <h5 class="category">category</h5>
-                                                <h5 class="category"> model</h5>
-                                                <hr>
-                                                <button></button>
-                                                <button></button>
-                                            </div>
-             */
-
-            //   divclass.appendChild(pdetail);
-
-
-
-
-            //   var img = document.createElement('img');
-            //   img.setAttribute("src" , image);
-            // //   img.setAttribute("alt", "Sorry ");
-            //   addpost.appendChild(img);
-
-
-            //   var divclass = document.createElement('div');
-            //   divclass.className ="cardfooter";
-            //   addpost.appendChild(divclass);
-            //   var bname = document.createElement('b');
-            //   var bnamenode = document.createTextNode(d.Title);
-            //   bname.className = "name";
-            //   bname.appendChild(bnamenode);
-            //   addpost.appendChild(bname);
-            // //   addpost.appendChild(bname);
-            //   var pdetail = document.createElement('p');
-            //   var pdetailnode = document.createTextNode(d.Detail);
-            //   addpost.appendChild(pdetail);
-            //   pdetail.appendChild(pdetailnode);
-            // //   divclass.appendChild(pdetail);
-            //     addpost = "";
         })
     })
 }
 
+    function myFunction (){
+        var input = document.getElementById('myInput').value;
+        var h5 = document.getElementsByClassName('name')[0];
+        if(!input.match(h5)){
+            alert('ok');
+        }
+        else{
+            alert('ot ok');
+        }
+    }
+
+
+// function myFunction() {
+//     var input,  addpost, cardfooter, h6, i;
+//     input = document.getElementById("myInput").value.toUpperCase();
+//     addpost = document.getElementById("addpost");
+//     cardfooter = document.getElementsByClassName("cardfooter");
+//     for (i = 0; i < cardfooter.length; i++) {
+//         h6 = cardfooter[i].getElementsByTagName("h5")[0].value;
+//         h6.toUpperCase(input);
+//         if (h6 == indexOf(input) > -1) {
+//             addpost.style.display = "none";
+//         } else {
+//             addpost.style.display = "inline";
+//             addpost.style.width = "50px";
+
+//         }
+//     }
+// }
+
+
+
+// $(document).ready(function(){
+//     $("#myInput").on("keyup", function() {
+//       var value = $(this).val().toLowerCase();
+//       $("#addpostdata *").filter(function() {
+//         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//       });
+//     });
+//   });
 
     //                 function search(){
     //     var search=document.getElementById("myInput").value.toUpperCase();
     //     // var filter=search.toUpperCase();
-    //     var card=document.getElementsByClassName('card-img-top')[0];
-    //     var cardb=document.getElementsByClassName('card-body')[0];
+    //     var card = document.getElementsByTagName('img')[0];
+    //     var cardb = document.getElementsByClassName('cardfooter')[0];
 
     //     for(i=0;i<cardb.length;i++){
-    //   var h2=cardb[i].getElementsByTagName("h2")[0];
+    //   var h2=cardb[i].getElementsByTagName("h6")[0];
     //   if(h2.innerHTML.toUpperCase().indexOf(search)>-1){
     //     cardb[i].style.display="";
     //     card[i].style.display="";

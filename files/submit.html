@@ -103,127 +103,130 @@
                                     </div>
                                     <!--Header-->
                                     <div id="snackbar"></div>
-<!-- Steps form -->
-<div class="card">
-        <div class="card-body mb-4">
-    
-            <!-- <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Steps form example</strong></h2> -->
-    
-            <!-- Stepper -->
-            <div class="steps-form">
-                <div class="steps-row setup-panel">
-                    <div class="steps-step">
-                        <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
-                        <p>Step 1</p>
-                    </div>
-                    <div class="steps-step">
-                        <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                        <p>Step 2</p>
-                    </div>
-                    <div class="steps-step">
-                        <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                        <p>Step 3</p>
-                    </div>
-                </div>
-            </div>
-    
-            <form role="form" action="" method="post">
-    
-                <!-- First Step -->
-                <div class="row setup-content" id="step-9">
-                    <div class="col-md-12">
-                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 1</strong></h3> -->
-                        <div class="form-group md-form">
-                            <label for="submitname" data-error="wrong" data-success="right">your Name</label>
-                            <input id="submitname" type="text"  class="form-control validate" >
-                        </div>
-                   
-                        
+                                    <!-- Steps form -->
+                                    <div class="card">
+                                        <div class="card-body mb-4">
 
-                        <!-- <div class="form-group md-form mt-3">
+                                            <!-- <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Steps form example</strong></h2> -->
+
+                                            <!-- Stepper -->
+                                            <div class="steps-form">
+                                                <div class="steps-row setup-panel">
+                                                    <div class="steps-step">
+                                                        <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
+                                                        <p>Step 1</p>
+                                                    </div>
+                                                    <div class="steps-step">
+                                                        <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                                        <p>Step 2</p>
+                                                    </div>
+                                                    <div class="steps-step">
+                                                        <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                                        <p>Step 3</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <form role="form" action="" method="post">
+
+                                                <!-- First Step -->
+                                                <div class="row setup-content" id="step-9">
+                                                    <div class="col-md-12">
+                                                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 1</strong></h3> -->
+                                                        <!-- <div class="form-group md-form">
+                            <label for="submitname" data-error="wrong" data-success="right">Product title</label>
+                            <input id="submitname" type="text"  class="form-control validate" >
+                        </div> -->
+
+
+
+                                                        <!-- <div class="form-group md-form mt-3">
                                 <label for="submitnumber" data-error="wrong" data-success="right">Contact number</label>
                                 <input id="submitnumber" type="number"  class="form-control validate" >
                             </div> -->
-                        
-                            <div class="form-group md-form">
-                                    <label for="submittitle" data-error="wrong" data-success="right">Product Title</label>
-                                    <input id="submittitle" type="text"  class="form-control validate" >
-                                </div>
-                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" >Next</button>
-                    </div>
-                </div>
-    
-                <!-- Second Step -->
-                <div class="row setup-content" id="step-10">
-                    <div class="col-md-12">
-                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 2</strong></h3> -->
-                        
-                        <div class="form-group md-form mt-3">
-                                <label for="submitprice" data-error="wrong" data-success="right">Add Price</label>
-                                <input id="submitprice" type="number"  class="form-control validate" >
-                            </div>
-                        <select class="mdb-select btn-block" id="submitcategory" >
-                                <option value="" disabled selected>Select Your Category</option>
-                                <option value="Mobiles">Mobiles</option>
-                                <option value="Vehicles">Vehicles</option>
-                                <option value="Clothes">Clothes</option>
-                                <option value="Property">Property</option>
-                                <option value="Laptop">Laptop</option>
-                                <option value="Jobs">Jobs</option>
-                                <option value="Fans">Fans</option>
-                                <option value="Fridge">Fridge</option>
-                                <option value="Furniture">Furniture</option>
-                                <!-- <option value="Jobs">Jobs</option> -->
-                                
-                                
-                            </select>
-                            
-                            <!-- <label>Example label</label> -->
-                            <br>
-                        <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
-                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()" >Next</button>
-                    </div>
-                </div>
-    
-                <!-- Third Step -->
-                <div class="row setup-content" id="step-11">
-                    <div class="col-md-12">
-                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 3</strong></h3> -->
-                        <!-- <div class="md-form"> -->
-                                <!-- <i class="fa fa-pencil prefix"></i>  -->
-                                <!-- <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" ></textarea>
+
+                                                        <div class="form-group md-form">
+                                                            <label for="submittitle">Product Title</label>
+                                                            <input id="submittitle" type="text" class="form-control validate">
+                                                        </div>
+                                                        <select class="mdb-select btn-block" id="submitcategory">
+                                                            <option value="" disabled selected>Select Your Category</option>
+                                                            <option value="Mobiles">Mobiles</option>
+                                                            <option value="Vehicles">Vehicles</option>
+                                                            <option value="Clothes">Clothes</option>
+                                                            <option value="Property">Property</option>
+                                                            <option value="Laptop">Laptop</option>
+                                                            <option value="Jobs">Jobs</option>
+                                                            <option value="Fans">Fans</option>
+                                                            <option value="Fridge">Fridge</option>
+                                                            <option value="Furniture">Furniture</option>
+                                                            <!-- <option value="Jobs">Jobs</option> -->
+
+
+                                                        </select>
+
+                                                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Next</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Second Step -->
+                                                <div class="row setup-content" id="step-10">
+                                                    <div class="col-md-12">
+                                                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 2</strong></h3> -->
+
+                                                        <div class="form-group md-form mt-3">
+                                                            <label for="submitprice">Add Price</label>
+                                                            <input id="submitprice" type="number" class="form-control validate">
+                                                        </div>
+
+                                                        <div class="form-group md-form mt-3">
+                                                            <label for="submitmodel">Model </label>
+                                                            <input id="submitmodel" type="text" class="form-control validate">
+                                                        </div>
+                                                        <!-- <label>Example label</label> -->
+                                                        <!-- <br> -->
+                                                        <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
+                                                        <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()">Next</button>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Third Step -->
+                                                <div class="row setup-content" id="step-11">
+                                                    <div class="col-md-12">
+                                                        <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 3</strong></h3> -->
+                                                        <!-- <div class="md-form"> -->
+                                                        <!-- <i class="fa fa-pencil prefix"></i>  -->
+                                                        <!-- <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" ></textarea>
                                 <label for="submitdescription">Add Description</label>
                             </div> -->
-                            <!-- <form class="md-form"> -->
-                                    <div class="form-group md-form mt-3">
-                                            <label for="submitmodel" data-error="wrong" data-success="right">Model </label>
-                                            <input id="submitmodel" type="text"  class="form-control validate" >
+                                                        <!-- <form class="md-form"> -->
+                                                        <center>
+                                                            <div class="file-field">
+                                                                <a class="btn-floating peach-gradient mt-0 float-left">
+                                                                    <i class="fa fa-paperclip" aria-hidden="true"></i>
+                                                                    <input type="file" value="upload" id="submitfileButton">
+                                                                </a>
+                                                                <br>
+                                                                <br>
+                                                                <progress value="0" max="100" id="submituploader"> 0% </progress>
+                                                                <br>
+                                                                <a href="post.html" id="uploading"></a>
+                                                        </center>
+
+                                                        <!-- <br> -->
+                                                        <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
+                                                        <button class="btn btn-default btn-rounded float-right" type="submit" onclick="ch()">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- </form> -->
+                                                </div>
+
+                                                <!-- </form> -->
+
                                         </div>
-                                    <div class="file-field">
-                                        <a class="btn-floating peach-gradient mt-0 float-left">
-                                            <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                            <input type="file" value="upload" id="submitfileButton">
-                                        </a>
-                                        <br>
-                                        <progress value="0" max="100" id="submituploader" onclick="ch()" > 0% </progress>
-                                            <br>
-                                        <a href="post.html" id="uploading"></a>
-                                  
-                                        
-                                        <!-- <br> -->
-                                        <!-- <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button> -->
-                                        <button class="btn btn-default btn-rounded float-right" type="submit" >Submit</button>
                                     </div>
-                                </div>
-                                <!-- </form> -->
-                </div>
-    
-            <!-- </form> -->
-    
-        </div>
-    </div>
-    <!-- Steps form -->
-                                <!--/Form with header-->
+                                    <!-- Steps form -->
+                                    <!--/Form with header-->
                             </section>
                             <br>
                             <!-- <br> -->
@@ -238,21 +241,21 @@
                                 <i class="fa fa-home" aria-hidden="true"></i> post</a>
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
     </header>
     <script>
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('../sw.js')
-                    .then(function () {
-                        console.log('Service Worker Registered');
-                    });
-            }
-        </script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js')
+                .then(function () {
+                    console.log('Service Worker Registered');
+                });
+        }
+    </script>
 
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>

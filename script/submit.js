@@ -71,13 +71,13 @@ var submitcategory = document.getElementById('submitcategory');
 // let uploading= document.getElementById('uploading');
 // let images = document.getElementById('images');
 
-if(submitname.length < 3 ){
-    swal({
-        title: "Warning!",
-        text: "name must be 3 characters ",
-        icon: "warning",
-    });
-}
+// if(submitname.length < 3 ){
+//     swal({
+//         title: "Warning!",
+//         text: "name must be 3 characters ",
+//         icon: "warning",
+//     });
+// }
 
 
 
@@ -136,7 +136,7 @@ if(submitname.length < 3 ){
                 var postData = {    
 
                     Price: submitprice.value,
-                        Name : submitname.value,
+                        // Name : submitname.value,
                         Title: submittitle.value,
                         // Detail: submitdescription.value,
                         Price: submitprice.value,
@@ -196,27 +196,27 @@ if(submitname.length < 3 ){
 // var add = document.getElementById('add').innerHTML = null;
 
 
-function searchBar() {
-    var searchBar = document.getElementById('search');
-    var searching = searchBar.value.toLocaleUpperCase();
-    var cardImg = document.getElementsByClassName('img');
-    var adCardText = document.getElementsByClassName('text');//li
-    var adCard = document.getElementsByClassName('adCard');//li
+// function searchBar() {
+//     var searchBar = document.getElementById('search');
+//     var searching = searchBar.value.toLocaleUpperCase();
+//     var cardImg = document.getElementsByClassName('img');
+//     var adCardText = document.getElementsByClassName('text');//li
+//     var adCard = document.getElementsByClassName('adCard');//li
     
 
-    for (i = 0; i < adCardText.length; i++) {
-        var h4 = adCardText[i].getElementsByTagName('P')[0];
-        if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
-          adCardText[i].style.display = "inline";
-          cardImg[i].style.display = 'inline';
-        }
-        else {
-          adCardText[i].style.display = 'none';
-            cardImg[i].style.display = 'none';
-            adCard[i].style.display = 'none';
-        }
-    }
-  }
+//     for (i = 0; i < adCardText.length; i++) {
+//         var h4 = adCardText[i].getElementsByTagName('P')[0];
+//         if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
+//           adCardText[i].style.display = "inline";
+//           cardImg[i].style.display = 'inline';
+//         }
+//         else {
+//           adCardText[i].style.display = 'none';
+//             cardImg[i].style.display = 'none';
+//             adCard[i].style.display = 'none';
+//         }
+//     }
+//   }
     //   }
       
 
