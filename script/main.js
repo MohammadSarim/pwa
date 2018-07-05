@@ -76,7 +76,7 @@ function searchBar() {
         if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
           adCardText[i].style.display = "inline";
           cardImg[i].style.display = 'inline';
-          t.style.visibility = 'hidden';
+        //   t.style.visibility = 'hidden';
           
         }
         else {
@@ -86,7 +86,9 @@ function searchBar() {
             // adCard[i].style.display = 'none';
         }
     }
-  }
+    }
+
+       
 
 
     // function myFunction (){
