@@ -1,6 +1,6 @@
 
 function getAdds() {
-    firebase.database().ref('Posts/').once('value', (snapshot) => {
+    firebase.database().ref('Posts/').on('value', (snapshot) => {
         snapshot.forEach((data) => {
             var d = data.val();
             // var key = Object.keys(d); 
@@ -73,7 +73,7 @@ category.addEventListener('change', (e)=>{
     // console.log(e.target.value);
     
     var selectvalue = e.target.value;
-    if(selectvalue == true){
+    // if(selectvalue == true){
     // console.log(selectvalue)
     // firebase.database().ref('Posts/' + selectvalue).once('value', (snapshot) => {
 
@@ -166,37 +166,41 @@ category.addEventListener('change', (e)=>{
 
             addpost.appendChild(footer);
             categorydata.appendChild(addpost);
-            categorydata.innerHTML = ' ';
+            // categorydata.innerHTML = ' ';
 
-
-        })
-        }
-    //     else{
-    //         document.getElementById('categorydata').innerHTML = " ";
-        
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        // })
-    
 // })
-})
+            })
+            // })
+        // }
+        })
 // }
+
+
+function searchBar() {
+    var searchBar = document.getElementById('myInput');
+    var searching = searchBar.value.toLocaleUpperCase();
+    var cardImg = document.getElementsByTagName('img');
+    var adCardText = document.getElementsByClassName('cardfooter');//li
+    // var adCard = document.getElementsByClassName('h5');//li
+    var t = document.getElementById('addpostdata');
+    
+
+    for (i = 0; i < adCardText.length; i++) {
+        var h4 = adCardText[i].getElementsByTagName('h5')[0];
+        if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
+          adCardText[i].style.display = "inline";
+          cardImg[i].style.display = 'inline';
+        //   t.style.visibility = 'hidden';
+          
+        }
+        else {
+          adCardText[i].style.display = 'none';
+            cardImg[i].style.display = 'none';
+            // t.style.visibility = 'hidden';
+            // adCard[i].style.display = 'none';
+        }
+    }
+    }
 
     // var cat=e.target.value
 //    console.log( data.val())
