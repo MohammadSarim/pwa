@@ -71,18 +71,39 @@ var category=document.getElementById("data1");
 category.addEventListener('change', (e)=>{
 
     // console.log(e.target.value);
-    var selectvalue = e.target.value;
     
+    var selectvalue = e.target.value;
+    if(selectvalue == true){
     // console.log(selectvalue)
-    firebase.database().ref('Posts/' + selectvalue).on('value', (snapshot) => {
+    // firebase.database().ref('Posts/' + selectvalue).once('value', (snapshot) => {
 
-        snapshot.forEach((data) => {
-            var ld = data.val();
+    //     snapshot.forEach((da) => {
+    //         var ld = da.val();
+
+            firebase.database().ref('Posts/' + selectvalue).once('value', (snapshot) => {
+                // snapshot.forEach((data) => {
+                    var ld = snapshot.val();
+                    // console.log(ud);
+                    // snapshot.forEach((v) =>{
+
+            // console.log('ld' , ld);
             // var key = Object.keys(d); 
             // console.log(d);
             // console.log(key.imgUrl, "k")
-            var image = ld.imgUrl;
-            console.log(image , " -- -== =")
+            // var pic = da.key;
+            // var arr = [];
+            // var ld = v.val();
+            // console.log('key'  , v.key);
+            // console.log('ld' , v.imgUrl)
+            // var img =  v.imgUrl ;
+            // for(var k in ld){
+            //     // console.log(ld[k]);
+            //     arr.push(ld)[k];
+            //     console.log(arr);
+            // } 
+
+                    // console.log(img , "va"); 
+            // console.log(va , " -- -== =");
             // snapshot.forEach(function (listdata){
         //     var ld = listdata.val();
         //     var key = listdata.key;
@@ -92,8 +113,8 @@ category.addEventListener('change', (e)=>{
         //     // console.log(ld.keys);
         //     // console.log(listdata.key);
         //     // console.log(ld)
-        //      var image = ld.imgUrl;
-        //      console.log('img ', image); 
+             var image = ld.imgUrl;
+             console.log('img ', image); 
 
             var addpostdata = document.getElementById('addpostdata').innerHTML = " " ;
             var categorydata = document.getElementById('categoryData');
@@ -145,30 +166,35 @@ category.addEventListener('change', (e)=>{
 
             addpost.appendChild(footer);
             categorydata.appendChild(addpost);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            categorydata.innerHTML = ' ';
 
 
         })
+        }
+    //     else{
+    //         document.getElementById('categorydata').innerHTML = " ";
+        
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // })
     
-})
+// })
 })
 // }
 
