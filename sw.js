@@ -8,7 +8,7 @@ const staticAssets = [ "/",
     "style/submit.css",
     "style/main.css",
     "style/register.css",
-    "style/post.css",
+    
     "style/submit.css",
     "files/login.html",
     "files/signup.html",
