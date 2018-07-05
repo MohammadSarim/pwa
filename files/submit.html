@@ -68,7 +68,8 @@
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
-
+                    <li><a class="nav-link" href="#"  id="logout" onclick="logOut()"><i class="fa fa-sign-out" aria-hidden="true"></i> log out <span class="sr-only">(current)</span></a>
+                    
                     <!-- <a class="nav-link" href="#" id=" btnHome" id="logout" onclick="logOut()"><i class="fa fa-instagram"></i> log out <span class="sr-only">(current)</span></a> -->
                     <!-- </li> -->
                 </ul>
@@ -151,18 +152,11 @@
                                                         </div>
                                                         <select class="mdb-select btn-block" id="submitcategory">
                                                             <option value="" disabled selected>Select Your Category</option>
-                                                            <option value="Mobiles">Mobiles</option>
+                                                            <option value="Mobiles & Laptops">Mobiles & Laptops</option>
                                                             <option value="Vehicles">Vehicles</option>
                                                             <option value="Clothes">Clothes</option>
                                                             <option value="Property">Property</option>
-                                                            <option value="Laptop">Laptop</option>
-                                                            <option value="Jobs">Jobs</option>
-                                                            <option value="Fans">Fans</option>
-                                                            <option value="Fridge">Fridge</option>
-                                                            <option value="Furniture">Furniture</option>
-                                                            <!-- <option value="Jobs">Jobs</option> -->
-
-
+                                                            <option value="Electronics Items">Electronics Items</option>
                                                         </select>
 
                                                         <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Next</button>
@@ -250,7 +244,7 @@
     </header>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('../sw.js')
+            navigator.serviceWorker.register('sw.js')
                 .then(function () {
                     console.log('Service Worker Registered');
                 });

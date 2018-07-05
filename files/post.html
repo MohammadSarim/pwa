@@ -131,6 +131,9 @@ body, h1, h2, h3, h4, h5, h6 {
      
      float: right;
  }
+ #dropdownMenu5{
+     background-color: #FF2A7F;
+ }
     </style>
     <!--Main Navigation-->
     <header>
@@ -151,6 +154,21 @@ body, h1, h2, h3, h4, h5, h6 {
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+                    <li>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button"  id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i> Category
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                          <a class="dropdown-item" href="#">Mobiles & Laptops</a>
+                          <a class="dropdown-item " href="#">Vehicles</a>
+                          <a class="dropdown-item" href="#">Clothes</a>
+                          <a class="dropdown-item" href="#">Property</a>
+                          <a class="dropdown-item" href="#">Electronics Items</a>
+                          
+                        </div>
+                    </div>
+                </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
                     </li>
@@ -162,6 +180,7 @@ body, h1, h2, h3, h4, h5, h6 {
                      </li> -->
                 </ul>
                 <ul class="  navbar-nav nav-flex-icons">
+
 
                     <li class="nav-item">
                         <a class="nav-link">
@@ -179,7 +198,7 @@ body, h1, h2, h3, h4, h5, h6 {
                         </a>
                     </li>
 
-                    <li><a class="nav-link" href="#"  id="logout" onclick="logOut()"><i class="fa fa-instagram"></i> log out <span class="sr-only">(current)</span></a>
+                    <li><a class="nav-link" href="#"  id="logout" onclick="logOut()"><i class="fa fa-sign-out" aria-hidden="true"></i> log out <span class="sr-only">(current)</span></a>
                     
                 </ul>
             </div>
@@ -242,7 +261,7 @@ body, h1, h2, h3, h4, h5, h6 {
     
     <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('../sw.js')
+                navigator.serviceWorker.register('sw.js')
                     .then(function () {
                         console.log('Service Worker Registered');
                     });
