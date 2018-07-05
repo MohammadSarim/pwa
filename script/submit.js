@@ -196,31 +196,7 @@ var submitcategory = document.getElementById('submitcategory');
 // var add = document.getElementById('add').innerHTML = null;
 
 
-// function searchBar() {
-//     var searchBar = document.getElementById('search');
-//     var searching = searchBar.value.toLocaleUpperCase();
-//     var cardImg = document.getElementsByClassName('img');
-//     var adCardText = document.getElementsByClassName('text');//li
-//     var adCard = document.getElementsByClassName('adCard');//li
-    
-
-//     for (i = 0; i < adCardText.length; i++) {
-//         var h4 = adCardText[i].getElementsByTagName('P')[0];
-//         if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
-//           adCardText[i].style.display = "inline";
-//           cardImg[i].style.display = 'inline';
-//         }
-//         else {
-//           adCardText[i].style.display = 'none';
-//             cardImg[i].style.display = 'none';
-//             adCard[i].style.display = 'none';
-//         }
-//     }
-//   }
-    //   }
-      
-
-    //   function myFunction() {
+          //   function myFunction() {
     //     var input, filter, addpostdata, addpost, a, i;
     //     input = document.getElementById("myInput");
     //     filter = input.value.toUpperCase();

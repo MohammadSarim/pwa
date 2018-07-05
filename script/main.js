@@ -61,16 +61,49 @@ function getAdds() {
     })
 }
 
-    function myFunction (){
-        var input = document.getElementById('myInput').value;
-        var h5 = document.getElementsByClassName('name')[0];
-        if(!input.match(h5)){
-            alert('ok');
+
+function searchBar() {
+    var searchBar = document.getElementById('myInput');
+    var searching = searchBar.value.toLocaleUpperCase();
+    var cardImg = document.getElementsByTagName('img');
+    var adCardText = document.getElementsByClassName('cardfooter');//li
+    // var adCard = document.getElementsByClassName('h5');//li
+    var t = document.getElementById('addpost');
+    
+
+    for (i = 0; i < adCardText.length; i++) {
+        var h4 = adCardText[i].getElementsByTagName('h5')[0];
+        if (h4.innerHTML.toLocaleUpperCase().indexOf(searching) > -1) {
+        //   adCardText[i].style.display = "inline";
+          cardImg[i].style.display = 'inline';
         }
-        else{
-            alert('ot ok');
+        else {
+          adCardText[i].style.display = 'none';
+            cardImg[i].style.display = 'none';
+            t.style.display = 'none';
+            // adCard[i].style.display = 'none';
         }
     }
+  }
+
+
+    // function myFunction (){
+    //     var input = document.getElementById('myInput').value;
+    //     var h5 = document.getElementsByClassName('name')[0];
+    //     if(input == h5){
+    //         alert("ok")
+    //     }
+    //     else{
+    //         alert("not ok");
+    //     }
+        
+        // if(!input.match(h5)){
+        //     alert('ok');
+        // }
+        // else{
+        //     alert('ot ok');
+        // }
+    
 
 
 // function myFunction() {
