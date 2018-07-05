@@ -45,7 +45,8 @@ function getAdds() {
             var b = document.createElement('button');
             b.setAttribute("id", "icon");
             var i = document.createElement('i');
-            i.className = "fa fa-heart";
+            i.setAttribute("id" , "heart")
+            i.className = "fa fa-heart-o";
             b.appendChild(i);
             footer.appendChild(b);
             var btn = document.createElement('button');
@@ -57,6 +58,13 @@ function getAdds() {
 
             addpost.appendChild(footer);
             addpostdata.appendChild(addpost);
+            
+            var icon = document.getElementById('heart');
+            icon.addEventListener('click' , ()=>{
+                // document.createElement('i');
+                icon.className.replace = "fa fa-heart";
+                // icon.appendChild(foricon);
+            })
         })
     })
 }
@@ -154,7 +162,7 @@ category.addEventListener('change', (e)=>{
             var b = document.createElement('button');
             b.setAttribute("id", "icon");
             var i = document.createElement('i');
-            i.className = "fa fa-heart";
+            i.className = "fa fa-heart-o";
             b.appendChild(i);
             footer.appendChild(b);
             var btn = document.createElement('button');

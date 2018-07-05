@@ -154,7 +154,8 @@ body, h1, h2, h3, h4, h5, h6 {
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- </ul> -->
+                    
                         <select class="mdb-select btn-block" id="data1" >
                             <option value="" disabled selected>Select Your Category</option>
                             <option value="Mobiles & Laptops">Mobiles & Laptops</option>
@@ -163,7 +164,6 @@ body, h1, h2, h3, h4, h5, h6 {
                             <option value="Property">Property</option>
                             <option value="Electronics Items">Electronics Items</option>
                         </select>
-                </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
                     </li>
@@ -193,7 +193,7 @@ body, h1, h2, h3, h4, h5, h6 {
                         </a>
                     </li>
 
-                    <li><a class="nav-link" href="#"  id="logout" onclick="logOut()"><i class="fa fa-sign-out" aria-hidden="true"></i> log out <span class="sr-only">(current)</span></a>
+                    <li><a class="nav-link" href="../index.html"  id="logout" onclick="logOut()"><i class="fa fa-sign-out" aria-hidden="true"></i> log out <span class="sr-only">(current)</span></a>
                     
                 </ul>
             </div>
@@ -213,10 +213,8 @@ body, h1, h2, h3, h4, h5, h6 {
                 <!-- /        <div class="text-center"> -->
                             <!-- <p>fks</p> -->
                             <br>
-
-                            <div class="container" id="addpostdata">
-                                
-                                <div id="categoryData"></div>
+                            <div id="addpostdata"></div>
+<div id="categoryData"></div>
                                     <!-- <img src="../images/c.jpg" alt="c" >
                                 <div class="cardfooter">
                                    <h4 class="name"> <b >Muhammad Imran</b> </h4>
@@ -227,7 +225,7 @@ body, h1, h2, h3, h4, h5, h6 {
                                     <button></button>
                                     <button></button>
                                 </div> -->
-                            </div>
+                            
                            
                            
                             
@@ -264,7 +262,6 @@ body, h1, h2, h3, h4, h5, h6 {
             }
         </script>
     
-
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -282,11 +279,12 @@ body, h1, h2, h3, h4, h5, h6 {
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-    <script src="../script/register.js"></script>
-    <script src="../script/submit.js"></script>
     <script src="../script/category.js"></script>
+    <script src="../script/register.js"></script>
     
-    <script src="../script/main.js"></script>
+    
+    <!-- <script src="../script/main.js"></script> -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="../script/submit.js"></script> -->
 
 </html>
