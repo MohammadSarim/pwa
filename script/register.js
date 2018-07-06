@@ -15,16 +15,20 @@ function signUp() {
     // var signupname = document.getElementById('signupname');
     var signupemail = document.getElementById('signupemail');
     var signuppassword = document.getElementById('signuppassword');
+    var errormsg = document.getElementById('errormsg');
 
     // console.log(email, password)
 
     if (!signupemail.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
     // setTimeout(()=>{
-        swal({
-            title: "Warning!",
-            text: "Please enter you email address abc@gmail.com. ",
-            icon: "warning",
-        });
+        errormsg.innerHTML = "Please enter you email address abc@gmail.com.";    
+    signupemail.onfocus();
+    return false;
+    // swal({
+    //     title: "Warning!",
+    //     text: "Please enter you email address abc@gmail.com. ",
+    //         icon: "warning",
+    //     });
     
     }
     //  if ( signupname.length < 3 ) {
