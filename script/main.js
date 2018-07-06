@@ -45,7 +45,7 @@ function getAdds() {
             var b = document.createElement('button');
             b.setAttribute("id", "icon");
             var i = document.createElement('i');
-            i.className = "fa fa-heart";
+            i.className = "fa fa-heart-o";
             b.appendChild(i);
             footer.appendChild(b);
             var btn = document.createElement('button');

@@ -44,7 +44,7 @@ function getAdds() {
 
             var b = document.createElement('button');
             b.setAttribute("id", "icon");
-            var i = document.createElement('i');
+            let i = document.createElement('i');
             i.setAttribute("id" , "heart")
             i.className = "fa fa-heart-o";
             b.appendChild(i);
@@ -59,13 +59,17 @@ function getAdds() {
             addpost.appendChild(footer);
             addpostdata.appendChild(addpost);
             
-            var icon = document.getElementById('heart');
-            icon.addEventListener('click' , ()=>{
+            window.onclick = (()=>{
+                i.removeClass =  "fa-heart-o ";
+                //    var newi = document.createElement('i');
+            //     newi.className = "fa fa-heart";
+            //     ic.appendChild(newi);
+               alert('ok');
                 // document.createElement('i');
-                icon.className.replace = "fa fa-heart";
+                // ic.className.replace = "fa fa-heart";
                 // icon.appendChild(foricon);
             })
-        })
+            })
     })
 }
 // var ddd = document.getElementById("categoryData");
@@ -162,7 +166,7 @@ category.addEventListener('change', (e)=>{
             var b = document.createElement('button');
             b.setAttribute("id", "icon");
             var i = document.createElement('i');
-            i.className = "fa fa-heart-o";
+            i.className = "fa fa-heart";
             b.appendChild(i);
             footer.appendChild(b);
             var btn = document.createElement('button');
@@ -175,6 +179,7 @@ category.addEventListener('change', (e)=>{
             addpost.appendChild(footer);
             categorydata.appendChild(addpost);
             // categorydata.innerHTML = ' ';
+
 
 // })
             })
@@ -209,6 +214,7 @@ function searchBar() {
         }
     }
     }
+
 
     // var cat=e.target.value
 //    console.log( data.val())
