@@ -130,22 +130,18 @@ var submitcategory = document.getElementById('submitcategory');
                 storageRef.getDownloadURL().then(function (url,uid) {
                 // var c = localStorage.getItem('user');
                 // console.log(c , 'ddd');
-                var postKey = firebase.database().ref("Posts/"  ).push().key;
+                // var postKey = firebase.database().ref("Posts/"  ).push().key;
                 
                 var updates = {};
                 var postData = {    
 
                     Price: submitprice.value,
-                        // Name : submitname.value,
                         Title: submittitle.value,
-                        // Detail: submitdescription.value,
                         Price: submitprice.value,
-                        // Number: submitnumber.value,
                         imgUrl: url,
                         Model: submitmodel.value,
                         Category : submitcategory.value,
                         user: firebase.auth().currentUser.uid,
-                        // user : url.user.uid
                     };
                     // addEventListener.on('value' , data , err)
                     // function data(){
@@ -164,8 +160,10 @@ var submitcategory = document.getElementById('submitcategory');
                     //     console.log(id)
                     // }
                     // postKey.on(ref("Data/" + user.uid))
-                    updates["/Posts/" + postData.Category ] = postData;
-                    firebase.database().ref().update(updates);
+                    // updates[" ] = postData;
+                    firebase.database().ref('Posts/').push(postData);
+                    firebase.database().ref('Category/' + postData.Category).push(postData);
+                    
                     // .then( () =>{
                         // Insert url into an <img> tag to "download"
                         

@@ -104,7 +104,7 @@ function login() {
             console.log('cuser' , cU );
             // console.log(result.uid);
             // setTimeout(() => {
-                window.location = "../index.html";
+                window.location = "index.html";
             // }, 2000);
         })
         .catch(function (error) {

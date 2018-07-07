@@ -10,7 +10,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="style/main.css"> -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/register.css">
     <!-- <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon"> -->
     <link rel="manifest" href="manifset.json">
 
@@ -21,107 +22,209 @@
 <body>
     <style>
         body{
-            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrH0US-QAn-EU_YQ1Em3AnsslpGryGvsNkun3klLzohoyom2t") ;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgis4j83sq9Iwpm0azMAJZEv7m8cZtBJrd8ujKIYLn_GaSvfJiQ")center center no-repeat ;
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;
+            /* background-color: rgba(0, 0, 0, 0.466); */
+
+            /* margin-top: 20%;     */
         }
         
         </style>
     <!--Main Navigation-->
     <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-            <a class="navbar-brand" href="#">
-                <strong>A1 seller</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id=" btnHome" style="visibility: hidden" ; id="" onclick="logOut()">log out
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="  navbar-nav nav-flex-icons">
+            <nav class="navbar navbar-expand-lg navbar-dark default-color-dark">
 
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="index.html">A1 Seller</a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="files/login.html">Register</a> -->
+                            <!-- </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="files/submit.html" ><i class="fa fa-send" aria-hidden="true" ></i>Submit Ad</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="files/post.html"><i class="fa fa-id-card" aria-hidden="true"></i>Post </a>
+                                </li>
 
-                    <li>
-                        <a class="nav-link" href="#" id=" btnHome" id="logout" onclick="logOut()">
-                            <i class="fa fa-instagram"></i> log out
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
-
-
-
-        <!-- Intro Section -->
-        <!-- Font Awesome -->
-        <!-- <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjrH0US-QAn-EU_YQ1Em3AnsslpGryGvsNkun3klLzohoyom2t1"> -->
-            <div class="full-bg-img">
-                <!-- <a  class="btn btn-outline-white wow fadeInLeft"  data-wow-delay="0.4s" id="logout" onclick="logOut()"><i class="fa fa-user-circle-o" aria-hidden="true"></i> log out</a> -->
-                <div class="container flex-center">
-                    <div class="row pt-5 mt-3">
-                        <div class="col-md-12">
-                            <div class="text-center">
-                                <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInLeft" data-wow-delay="0.3s">
-                                    <strong>Welcome to no 1 seller</strong>
-                                </h1>
-                                <hr class="hr-light mt-4 wow fadeInLeft" data-wow-delay="0.4s">
-                                <h5 class="text-uppercase mb-5 white-text wow fadeInLeft" data-wow-delay="0.4s">
-                                    <strong>Register right now </strong>
-                                </h5>
-
-                                <a href="index.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s" id="1">
-                                    <i class="fa fa-home" aria-hidden="true"></i> home</a>
-                                <a href="files/login.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s" id="register">
-                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> register</a>
-                                <a href="files/submit.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
-                                    <i class="fa fa-home" aria-hidden="true"></i> Submit Add</a>
-                                <a href="files/post.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
-                                    <i class="fa fa-home" aria-hidden="true"></i> post</a>
-                                    <button id="buttonmsg" onclick="call()">click</button>
-                                    <div class="alert success" id="maindiv" style="display: none";>
-                                        <span class="closebtn">&times;</span>  
-                                        <strong>Success!</strong> Indicates a successful or positive action.
-                                      </div>
-                                      
-                            </div>
-                        </div>
+                        
+                
+                        </ul>
+                        <!-- Links -->
+                
+                        <a class="nav-link btn btn-outline-white btn-sm my-0" href="#" id=" btnHome" id="logout" onclick="logOut()">
+                                <i class="fa fa-sign-out"></i> log out
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        
                     </div>
+                    <!-- Collapsible content -->
+                
+                </nav>
+
+                <div class=" ">
+<div class="full-bg-img  ">
+<div class="row pt-5 mt-3">
+<div class="col-md-12">
+<div class="text-center">
+<!-- <p>fks</p> -->
+<br>
+<!-- <br> -->
+
+
+<section class="form-simple col-md-6 offset-md-3 text-center targetls wow-fadeInLeft" data-wow-delay="0.3s">
+
+<div class="card targetcard wow-fadeInLeft" data-wow-delay="0.3s">
+
+<!--Header-->
+<div class="header pt-3 targeth3l wow-fadeInLeft" data-wow-delay="0.3s">
+
+<div class="row d-flex justify-content-start ">
+ <h3 class="btn-lighten-1 mt-3 mb-4 pb-1 mx-5 font-weight-bold" id="logincontent">Log In</h3>
+</div>
+<!-- <hr class="hr-light wow fadeInRight" data-wow-delay="0.3s"> -->
+
+</div>
+<!--Header-->
+
+<div class="card-outline-white mx-4 mt-4">
+
+<!--Body-->
+<div class="md-form">
+ <input type="email" id="loginemail" class="form-control validate forcolor">
+ <label>Your email</label>
+</div>
+<br>
+
+<div class="md-form pb-3">
+ <input type="password" id="loginpassword" class="form-control validate forcolor">
+ <label>Your password</label>
+ <p class="font-small grey-text d-flex justify-content-end">Forgot
+     <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
+ </p>
+</div>
+
+<span id="errormsg"></span>
+
+<div class="text-center mb-4">
+ <button type="button" class="btn btn-danger btn-block z-depth-2 loginbtn" id="login" onclick="login()">Log in</button>
+</div>
+<p class="font-small grey-text d-flex justify-content-center">Don't have an account?
+ <a href="files/signup.html" class="dark-grey-text font-weight-bold ml-1">
+     Sign up</a>
+</p>
+
+
+</div>
+
+</section>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- <div class="modal fade" id="modalDefaultContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> -->
+        <!--Modal: Contact form-->
+        <!-- <div class="modal-dialog cascading-modal" role="document"> -->
+    
+            <!--Content-->
+            <!-- <div class="modal-content"> -->
+    
+                <!--Header-->
+                <!-- <div class="modal-header info-color white-text">
+                    <h4 class="title">
+                        <i class="fa fa-pencil"></i> Contact form</h4>
+                    <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div> -->
+                <!--Body-->
+                <!-- <center>
+                <a href="post.html" id="uploading"></a>
+            </center>
+                <div class="modal-body"> -->
+    
+                    <!-- Default input name -->
+                    <!-- <label for="submittitle">Product Title</label>
+                    <input type="text" id="submittitle" class="form-control form-control-sm">
+    
+                    <br>
+     -->
+                    <!-- Default input email -->
+                    <!-- <label for="Product">Product Modal</label>
+                    <input type="text" id="Product" class="form-control form-control-sm">
+    
+                    <br>
+     -->
+                    <!-- Default input subject -->
+                    <!-- <label for="submitprice">Product Price</label>
+                    <input type="text" id="submitprice" class="form-control form-control-sm">
+    
+                    <br>
+                    <select class="mdb-select btn-block" id="submitcategory">
+                            <option value="" disabled selected>Select Your Category</option>
+                            <option value="Mob & Laptop">Mobiles & Laptops</option>
+                            <option value="Vehicles">Vehicles</option>
+                            <option value="Clothes">Clothes</option>
+                            <option value="Property">Property</option>
+                            <option value="Electronics Items">Electronics Items</option>
+                        </select>
+                        <br>
+                        <center>
+                                <div class="file-field">
+                                    <a class="btn-floating peach-gradient mt-0 float-left"> -->
+                                        <!-- <i class="fa fa-paperclip" aria-hidden="true"></i> -->
+                                        <!-- <input type="file" value="upload" id="submitfileButton">
+                                    </a>
+                                    <br>
+                                    <br>
+                                    <progress value="0" max="100" id="submituploader"> 0% </progress>
+                                    <br>
+                                    <a href="post.html" id="uploading"></a>
+                                </div>
+                            </center>
+                    <div class="text-center mt-4 mb-2">
+                        <button class="btn btn-info" onclick="ch()">Send
+                            <i class="fa fa-send ml-2"></i>
+                        </button>
+                    </div>
+    
                 </div>
-            </div>
-        </div>
+            </div> -->
+            <!--/.Content-->
+        <!-- </div>
+        /Modal: Contact form
+    </div> -->
 
-    </header>
-    <!--Main Navigation-->
+    <!-- <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalDefaultContactForm">Launch Modal Login with Avatar</a>
+        </div> -->
 
-
-
-
+</header>
 
 
 

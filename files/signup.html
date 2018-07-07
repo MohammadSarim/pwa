@@ -2,82 +2,88 @@
 <html lang="en" class="full-height">
 
 <head>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/css/mdb.min.css" rel="stylesheet">
 
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/register.css">
-    <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon">
+    <!-- <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon"> -->
     <link rel="manifest" href="manifset.json">
 
 
-    <title>K.F.C</title>
+    <title>A1 Seller</title>
 </head>
 
 <body>
+    <style>
+        body{
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgis4j83sq9Iwpm0azMAJZEv7m8cZtBJrd8ujKIYLn_GaSvfJiQ")center center no-repeat ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            /* background-color: rgba(0, 0, 0, 0.466); */
+
+            /* margin-top: 20%;     */
+        }
+        
+        </style>
     <!--Main Navigation-->
     <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-            <a class="navbar-brand" href="../index.html">
-                <strong>A1 seller</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id=" btnHome" style="visibility: hidden" ; id="logout" onclick="logOut()">log out
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Opinions</a>
-                     </li> -->
-                </ul>
-                <ul class="  navbar-nav nav-flex-icons">
+            <nav class="navbar navbar-expand-lg navbar-dark default-color-dark">
 
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="../index.html">A1 Seller</a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="files/login.html">Register</a> -->
+                            <!-- </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="submit.html"><i class="fa fa-send" aria-hidden="true"></i>Submit Ad</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="post.html"><i class="fa fa-id-card" aria-hidden="true"></i>Post </a>
+                                </li>
 
-                    <!-- <a class="nav-link" href="#" id=" btnHome" id="logout" onclick="logOut()"><i class="fa fa-instagram"></i> log out <span class="sr-only">(current)</span></a> -->
-                    <!-- </li> -->
-                </ul>
-            </div>
-        </nav>
+                        
+                
+                        </ul>
+                        <!-- Links -->
+                
+                        <a class="nav-link btn btn-outline-white btn-sm my-0" href="#" id=" btnHome" id="logout" onclick="logOut()">
+                                <i class="fa fa-sign-out"></i> log out
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        
+                    </div>
+                    <!-- Collapsible content -->
+                
+                </nav>
 
-
-
+     
         <!-- Intro Section -->
-        <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515">
+        <!-- <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515"> -->
             <div class="full-bg-img">
                 <!-- <div class="container flex-center"> -->
                 <div class="row pt-5 mt-3">
@@ -86,37 +92,37 @@
                             <!-- <p>fks</p> -->
                             <br>
                             <!-- <br> -->
-
-
-
-
+        
+        
+        
+        
                             <section class="form-simple col-md-6 offset-md-3 text-center targetls wow-fadeInLeft" data-wow-delay="0.3s">
-
+        
                                 <div class="card targetcard wow-fadeInLeft" data-wow-delay="0.3s">
-
+        
                                     <!--Header-->
                                     <div class="header pt-3 targeth3l wow-fadeInLeft" data-wow-delay="0.3s">
-
+        
                                         <div class="row d-flex justify-content-start ">
                                             <h3 class="btn-lighten-1 mt-3 mb-4 pb-1 mx-5 font-weight-bold" id="logincontent">Sign Up</h3>
                                         </div>
-
+        
                                     </div>
                                     <!--Header-->
-
+        
                                     <div class="card-body mx-4 mt-4">
-
+        
                                         <!-- <div class="md-form mb-5">
                                             <input type="text" id="signupname" class="form-control validate forcolor">
                                             <label>Your name</label>
                                         </div> -->
-
+        
                                         <div class="md-form">
                                             <input type="email" id="signupemail" class="form-control validate forcolor">
                                             <label>Your email</label>
                                         </div>
                                         <br>
-
+        
                                         <div class="md-form pb-3">
                                             <input type="password" id="signuppassword" class="form-control validate forcolor">
                                             <label>Your password</label>
@@ -124,69 +130,72 @@
                                                 <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
                                             </p>
                                         </div>
-
+        
                                         <div class="text-center mb-4">
                                             <button type="button" class="btn btn-danger btn-block z-depth-2" onclick="signUp()">Sign Up</button>
                                         </div>
                                         <p class="font-small grey-text d-flex justify-content-center">Don't have an account?
-                                            <a href="login.html" class="dark-grey-text font-weight-bold ml-1">
+                                            <a href="../index.html" class="dark-grey-text font-weight-bold ml-1">
                                                 Login</a>
                                         </p>
-
+        
                                     </div>
-
+        
                                 </div>
                                 <!--/Form with header-->
                             </section>
-                            <br>
-                            <!-- <br> -->
-                            <!-- <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeInLeft" data-wow-delay="0.3s"><strong>Welcome to KFC</strong></h1>
-                              <hr class="hr-light mt-4 wow fadeInLeft" data-wow-delay="0.4s">
-                              <h5 class="text-uppercase mb-5 white-text wow fadeInLeft" data-wow-delay="0.4s"><strong>login with google </strong></h5> -->
-                            <a href="../index.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
-                                <i class="fa fa-home" aria-hidden="true"></i> home</a>
-                            <a href="submit.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s" id="register">
-                                <i class="fa fa-user-circle-o" aria-hidden="true"></i> Submit Add </a>
-                            <a href="post.html" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.4s">
-                                <i class="fa fa-home" aria-hidden="true"></i> post</a>
-
-
+                            
+        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        </header>
 
-    </header>
+
+
     <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('../sw.js')
+                navigator.serviceWorker.register('sw.js')
                     .then(function () {
                         console.log('Service Worker Registered');
                     });
             }
         </script>
-</body>
-<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyAurQAta-dWOkwJez2Td2t-ePAYvY8kvuA",
-        authDomain: "practice-hackaton.firebaseapp.com",
-        databaseURL: "https://practice-hackaton.firebaseio.com",
-        projectId: "practice-hackaton",
-        storageBucket: "practice-hackaton.appspot.com",
-        messagingSenderId: "834416971862"
-    };
-    firebase.initializeApp(config);
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-<script src="../script/register.js"></script>
-<script src="../script/submit.js"></script>
 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAurQAta-dWOkwJez2Td2t-ePAYvY8kvuA",
+            authDomain: "practice-hackaton.firebaseapp.com",
+            databaseURL: "https://practice-hackaton.firebaseio.com",
+            projectId: "practice-hackaton",
+            storageBucket: "practice-hackaton.appspot.com",
+            messagingSenderId: "834416971862"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script src="../script/register.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/submit.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </html>

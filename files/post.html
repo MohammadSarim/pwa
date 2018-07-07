@@ -20,7 +20,7 @@
     
     <title>A1</title>
 </head>
-<body onload="getAdds()">
+<body>
 <style>
 #addpostdata{
     padding: 20px;
@@ -57,7 +57,7 @@ img{
 body, h1, h2, h3, h4, h5, h6 {
     font-weight: 999;
 }
-.cardfooter{
+#cardfooter{
     padding:  2px 16px ;
     color: black;
     /* background-color: rgb(233, 241, 241); */
@@ -67,7 +67,7 @@ body, h1, h2, h3, h4, h5, h6 {
      /* display: inline-block; */
  
  }
- .cardfooter .name{
+ #cardfooter .name{
      font-size: 20px;
  }
  @media(max-width:  425px){
@@ -103,6 +103,7 @@ body, h1, h2, h3, h4, h5, h6 {
   }
   .cardfooter .name{
       font-size: 20px;
+      margin-left: 2%;
   
      }
  }
@@ -137,26 +138,60 @@ body, h1, h2, h3, h4, h5, h6 {
     </style>
     <!--Main Navigation-->
     <header>
+            <nav class="navbar navbar-expand-lg navbar-dark default-color-dark">
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
-            <a class="navbar-brand" href="../index.html">
-                <strong>A1 seller</strong>
-            </a>
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="../index.html">A1 Seller</a>
+                
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+                
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="files/login.html">Register</a> -->
+                            <!-- </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="submit.html"><i class="fa fa-send" aria-hidden="true"></i>Submit Ad</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="post.html"><i class="fa fa-id-card" aria-hidden="true"></i>Post </a>
+                                </li>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" id=" btnHome" style="visibility: hidden" id="logout" onclick="logOut()">log out
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <!-- </ul> -->
-                    
-                        <select class="mdb-select btn-block" id="data1" >
+                        <!-- <li> -->
+                        </ul>
+                                <form class="form-inline">
+                                        <div class="md-form my-0">
+                                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="myInput" >
+                                        </div>
+                                    </form>
+                        <!-- </li> -->
+                                    <br>
+                        <!-- Links -->
+                
+                        <a class="nav-link btn btn-outline-white btn-sm my-0" href="#" id=" btnHome" id="logout" onclick="logOut()">
+                                <i class="fa fa-sign-out"></i> log out
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        
+                    </div>
+                    <!-- Collapsible content -->
+                
+                </nav>
+                <br>
+                
+                        <select class="mdb-select btn-block" id="categorydata" >
                             <option value="" disabled selected>Select Your Category</option>
                             <option value="Mobiles & Laptops">Mobiles & Laptops</option>
                             <option value="Vehicles">Vehicles</option>
@@ -164,46 +199,13 @@ body, h1, h2, h3, h4, h5, h6 {
                             <option value="Property">Property</option>
                             <option value="Electronics Items">Electronics Items</option>
                         </select>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Opinions</a>
-                     </li> -->
-                </ul>
-                <ul class="  navbar-nav nav-flex-icons">
-
-
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </li>
-
-                    <li><a class="nav-link" href="../index.html"  id="logout" onclick="logOut()"><i class="fa fa-sign-out" aria-hidden="true"></i> log out <span class="sr-only">(current)</span></a>
-                    
-                </ul>
-            </div>
-        </nav>
+                  
         <br>
         <br>
         <br>
-        <div class="active-purple-3 active-purple-4 mb-4">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search" id="myInput" onkeyup="searchBar()">
-        </div>
+        <!-- <div class="active-purple-3 active-purple-4 mb-4"> -->
+            <!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search" > -->
+        <!-- </div> -->
         <!-- <div id="bgimg"> -->
         <!-- <div class="view hm-black-light jarallax " id="img" data-jarallax='{"speed": 0.2}' style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFuNQad12U6sLvSw9RXdWwKH7EwGS-Y1M03Jk4NSrEt0RNW515"> -->
             <!-- <div class="full-bg-img"> -->

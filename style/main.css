@@ -1,16 +1,16 @@
 body{
     text-transform: capitalize;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .top-nav-collapse {
     background-color: #78909c !important;
 }
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+    background: rgb(19, 143, 116) !important;
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #78909c !important;
+        background: #02ad82 !important;
     }
 }
 h1 {
@@ -78,7 +78,7 @@ h5 {
     box-shadow: 0 1px 0 0 #ff3547; }
   
   .form-simple input[type=text]:focus:not([readonly]) + label {
-    color: #4f4f4f; }
+    color: #4f4f4f !important; }
   
   .form-simple input[type=password]:focus:not([readonly]) {
     border-bottom: 1px solid #ff3547;
@@ -160,4 +160,7 @@ h5 {
     
     .closebtn:hover {
         color: black;
+    }
+    #submitfileButton{
+        background-color: rgb(248, 248, 248) !important;
     }
