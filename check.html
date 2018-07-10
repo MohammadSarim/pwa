@@ -1,134 +1,129 @@
-<section class="form-simple col-md-6 offset-md-3 text-center targetls wow-fadeInLeft" data-wow-delay="0.3s">
-        
-        <div class="card targetcard wow-fadeInLeft" data-wow-delay="0.3s">
-
-            <!--Header-->
-            <div class="header pt-3 targeth3l wow-fadeInLeft" data-wow-delay="0.3s">
-
-                <div class="row d-flex justify-content-start ">
-                    <h3 class="btn-lighten-1 mt-3 mb-4 pb-1 mx-5 font-weight-bold" id="logincontent">Submit An Add</h3>
-                </div>
-
-            </div>
-            <!--Header-->
-            <div id="snackbar"></div>
-            <!-- Steps form -->
-            <div class="card">
-                <div class="card-body mb-4">
-
-                    <!-- <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Steps form example</strong></h2> -->
-
-                    <!-- Stepper -->
-                    <div class="steps-form">
-                        <div class="steps-row setup-panel">
-                            <div class="steps-step">
-                                <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
-                                <p>Step 1</p>
-                            </div>
-                            <div class="steps-step">
-                                <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                                <p>Step 2</p>
-                            </div>
-                            <div class="steps-step">
-                                <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                                <p>Step 3</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form role="form" action="" method="post">
-
-                        <!-- First Step -->
-                        <div class="row setup-content" id="step-9">
-                            <div class="col-md-12">
-                                <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 1</strong></h3> -->
-                                <!-- <div class="form-group md-form">
-    <label for="submitname" data-error="wrong" data-success="right">Product title</label>
-    <input id="submitname" type="text"  class="form-control validate" >
-</div> -->
 
 
-
-                                <!-- <div class="form-group md-form mt-3">
-        <label for="submitnumber" data-error="wrong" data-success="right">Contact number</label>
-        <input id="submitnumber" type="number"  class="form-control validate" >
-    </div> -->
-
-                                <div class="form-group md-form">
-                                    <label for="submittitle">Product Title</label>
-                                    <input id="submittitle" type="text" class="form-control validate">
-                                </div>
-                                <select class="mdb-select btn-block" id="submitcategory">
-                                    <option value="" disabled selected>Select Your Category</option>
-                                    <option value="Mob & Laptop">Mobiles & Laptops</option>
-                                    <option value="Vehicles">Vehicles</option>
-                                    <option value="Clothes">Clothes</option>
-                                    <option value="Property">Property</option>
-                                    <option value="Electronics Items">Electronics Items</option>
-                                </select>
-
-                                <!-- <button id="next1" class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()">Next</button> -->
-                            </div>
-                        </div>
-
-                        <!-- Second Step -->
-                        <div class="row setup-content" id="step-10">
-                            <div class="col-md-12">
-                                <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 2</strong></h3> -->
-
-                                <div class="form-group md-form mt-3">
-                                    <label for="submitprice">Add Price</label>
-                                    <input id="submitprice" type="number" class="form-control validate">
-                                </div>
-
-                                <div class="form-group md-form mt-3">
-                                    <label for="submitmodel">Product Model </label>
-                                    <input id="submitmodel" type="text" class="form-control validate">
-                                </div>
-                                <!-- <label>Example label</label> -->
-                                <!-- <br> -->
-                                <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
-                                <button id="next2" class="btn btn-indigo btn-rounded nextBtn float-right" type="button" onclick="ch()" >Next</button>
-                            </div>
-                        </div>
-
-                        <!-- Third Step -->
-                        <div class="row setup-content" id="step-11">
-                            <div class="col-md-12">
-                                <!-- <h3 class="font-weight-bold pl-0 my-4"><strong>Step 3</strong></h3> -->
-                                <!-- <div class="md-form"> -->
-                                <!-- <i class="fa fa-pencil prefix"></i>  -->
-                                <!-- <textarea type="text" id="submitdescription" class="md-textarea form-control" rows="1" ></textarea>
-        <label for="submitdescription">Add Description</label>
-    </div> -->
-                                <!-- <form class="md-form"> -->
-                                <center>
-                                    <div class="file-field">
-                                        <a class="btn-floating peach-gradient mt-0 float-left">
-                                            <i class="fa fa-paperclip" aria-hidden="true"></i>
-                                            <input type="file" value="upload" id="submitfileButton">
-                                        </a>
-                                        <br>
-                                        <br>
-                                        <progress value="0" max="100" id="submituploader"> 0% </progress>
-                                        <br>
-                                        <a href="post.html" id="uploading"></a>
-                                    </div>
-                                </center>
-
-                                <!-- <br> -->
-                                <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Previous</button>
-                                <!-- <button class="btn btn-default btn-round1ed float-right" type="submit" onclick="ch()">Submit</button> -->
-                                </div>
-                            </div>
-                            <!-- </form> -->
-                        </div>
-
-                        <!-- </form> -->
-
-                </div>
-            </div>
-            <!-- Steps form -->
-            <!--/Form with header-->
-    </section>
- 
+    // async function adds(){
+        //     await firebase.database().ref("pakolx").child("posts/").on("child_added",(data)=>{
+        //         var object = data.val();
+        //         var arr=[];
+            
+        //         for(var key in object){
+        //         // console.log(  object[key])
+                
+        //     var postObject=object[key]
+            
+        //     arr.push(postObject)}
+            
+            
+                
+            
+        //         var adContainer = document.getElementById("ads");
+            
+        //            arr.map((v,i)=>{
+            
+                  
+        //                     // cardDeck = document.createElement("DIV");
+        //                     // cardDeck.className = "card-deck";
+        //                     // adContainer.appendChild(cardMb3Hoverable);
+                       
+            
+        //                 var cardMb3Hoverable = document.createElement("DIV");
+        //                 cardMb3Hoverable.setAttribute("class", "card mb-4 hoverable");
+        //                 adContainer.appendChild(cardMb3Hoverable);
+            
+        //                 var viewOverlayZoom = document.createElement("DIV");
+        //                 viewOverlayZoom.setAttribute("class", "view overlay zoom");
+        //                 viewOverlayZoom.style.backgroundColor="grey"
+        //                 cardMb3Hoverable.appendChild(viewOverlayZoom);
+            
+        //                 var cardImgTop = document.createElement("IMG");
+        //                 cardImgTop.className = "img-fluid card-img-top waves-effect waves-light";
+        //                 cardImgTop.setAttribute("id", "adImg");
+        //                 cardImgTop.setAttribute("src", v.imageUrl);
+        //                 viewOverlayZoom.appendChild(cardImgTop);
+            
+        //                 var cardBody = document.createElement("DIV");
+        //                 cardBody.setAttribute("class", "card-body");
+        //                 cardMb3Hoverable.appendChild(cardBody);
+            
+        //                 var cardTitle = document.createElement("H2");
+        //                 cardTitle.setAttribute("class", "card-title");
+        //                 cardTitle.innerHTML = v.title;
+        //                 // cardTitle.toUppercase()
+        //                 cardBody.appendChild(cardTitle);
+            
+        //                 var cardText = document.createElement("p");
+        //                 cardText.setAttribute("class", "card-text");
+        //                 cardText.style.fontSize="16px"
+        //                 cardText.innerHTML = v.description;
+        //                 cardBody.appendChild(cardText);
+            
+        //                 var cardPriceTag = document.createElement("H3");
+        //                 cardPriceTag.setAttribute("class", "red-text");
+        //                 cardPriceTag.innerHTML = "Rs.";
+                       
+            
+        //                 var cardPrice = document.createElement("h4");
+        //                 cardPrice.setAttribute("class", "red-text");
+        //                 cardPrice.innerHTML = v.price+"/"+"-";
+        //                 cardPrice.style.display = "inline";
+        //                 cardPriceTag.appendChild(cardPrice);
+        //                 cardPrice.style.color="white !important" 
+            
+        //                 cardBody.appendChild(cardPriceTag);
+            
+        //                 var hr = document.createElement("HR");
+        //                 cardBody.appendChild(hr);
+            
+        //                 var adPostBy = document.createElement("P");
+        //                 adPostBy.innerHTML = "AD Posted By: ";
+        //                 cardBody.appendChild(adPostBy);
+            
+        //                 var adPosterName = document.createElement("SPAN");
+        //                 adPosterName.className = "text-secondary";
+        //                 adPosterName.innerHTML = v.fname;
+        //                 adPosterName.style.color="blue"
+        //                 // adPosterName.style.fontWeight="bolder"
+                        
+        //                 adPostBy.appendChild(adPosterName);
+            
+                        
+            
+        //                 var adPosterNum = document.createElement("P");
+        //                 adPosterNum.innerHTML = "Contact Number: ";
+            
+        //                 var adPosterNumber = document.createElement("SPAN");
+        //                 adPosterNumber.innerHTML = v.number;
+        //                 adPosterNumber.className = "text-secondary"
+        //                 adPosterNum.appendChild(adPosterNumber);
+        //                 adPosterNumber.style.color="blue"
+        //                 // adPosterNumber.style.fontWeight="bold"
+                        
+        //                 cardBody.appendChild(adPosterNum);
+            
+        //                 var watchlater=document.createElement("button");
+        //                 var btntext=document.createTextNode("Watch Later")
+        //                 watchlater.appendChild(btntext);
+        //                 watchlater.setAttribute("class","btn btn-danger")
+        //                 cardBody.appendChild(watchlater)
+            
+                        
+        //                 watchlater.addEventListener("click",function(){
+                             
+                              
+        //                   let currentUser=firebase.auth().currentUser.uid;
+                          
+        //                         let obj={
+        //                           description:v.description,
+        //                           name:v.fname,
+        //                           imageurl:v.imageUrl,
+        //                           num:v.number,
+        //                           price:v.price,
+        //                           title:v.title,
+        //                           user:currentUser
+        //                         }
+        //                         console.log(obj)
+                              
+        //                     //   })
+        //                       firebase.database().ref("pakolx").child("favourite/"+currentUser).push(obj)
+            
+                          
+        //                 })

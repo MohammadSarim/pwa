@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="en" class="full-height">
 
-<head>
+    <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/css/mdb.min.css" rel="stylesheet">
-
-
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/main.css">
-    <!-- <link rel="stylesheet" href="style/register.css"> -->
-    <!-- <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon"> -->
+    <link rel="short icon" href="http://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" type="image/icon">
     <link rel="manifest" href="manifset.json">
-
-
-    <title>A1 </title>
+    
+    
+    <title>A1</title>
 </head>
-
 <body>
-    <style>
-        body{
-            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcgis4j83sq9Iwpm0azMAJZEv7m8cZtBJrd8ujKIYLn_GaSvfJiQ")center center no-repeat ;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-            /* background-color: rgba(0, 0, 0, 0.466); */
+<style>
+#addpostdata{
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 2%;
+    /* width: 30%;
+    height: 600px; */
+}
 
-            /* margin-top: 20%;     */
-        }
-        
-        </style>
+#addpost{
+    
+    margin:  0 auto;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0 8px 16px 0 rgba(112, 111, 111, 0.2);
+    display: inline-block;
+    /* background-color: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    width: 30%;
+    height: 500px;
+    /* background-color: rgb(216, 212, 212); */
+    
+    border-radius: 5px;
+}
+#addpost:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-weight: 999;
+}
+#cardfooter{
+    padding:  2px 16px ;
+    color: black;
+    /* background-color: rgb(233, 241, 241); */
+    font-weight: 999;
+    font-weight: 16px;
+    /* font-family: Arial, Helvetica, sans-serif ; */
+     /* display: inline-block; */
+ 
+ }
+ #cardfooter .name{
+     font-size: 20px;
+ }
+ @media(max-width:  425px){
+     
+ #addpost{
+     
+     margin:  0 auto;
+      margin-top: 2%;
+      margin-left: 1%;
+      margin-right: 1%;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      display: block;
+      margin-left: 30%;
+      margin-right: 30%;
+      width: 70%;
+      height: 800px;
+      /* background-color: rgb(216, 212, 212); */
+      
+      border-radius: 5px;
+  }
+  #addpost:hover{
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+   img{
+   width: 100%;
+   height: 400px;
+  }
+  .cardfooter{
+      padding:  2px 16px ;
+      display: block;
+  
+  }
+  .cardfooter .name{
+      font-size: 20px;
+      margin-left: 2%;
+  
+     }
+ }
+ .category{
+     text-align: right;
+     color: gray;
+ }
+ .cardfooter{
+     /* background-color: rgb(209, 209, 209); */
+     width: 100%;
+     height: 100%;
+     font-weight: bolder;
+     text-transform: capitalize;
+ }  
+ #iconchat{
+     /* margin-right: 1%; */
+     float: right;
+     background-color: white;
+     border: 2px solid white;
+     cursor: pointer;
+ }
+ #icon{
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+     
+     float: right;
+ }
+ #dropdownMenu5{
+     background-color: #FF2A7F;
+ }
+    </style>
     <!--Main Navigation-->
     <header>
-
             <nav class="navbar navbar-expand-lg navbar-dark default-color-dark">
 
                     <!-- Navbar brand -->
@@ -53,22 +152,28 @@
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
-                                    <span class="sr-only">(current)</span>
+                                    <!-- <span class="sr-only">(current)</span> -->
                                 </a>
                             </li>
                             <!-- <li class="nav-item"> -->
                                 <!-- <a class="nav-link" href="files/login.html">Register</a> -->
                             <!-- </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="submit.html" ><i class="fa fa-send" aria-hidden="true" ></i>Submit Ad</a>
+                                <a class="nav-link" href="submit.html"><i class="fa fa-send" aria-hidden="true"></i>Submit Ad</a>
                             </li>
                             <li class="nav-item">
                                     <a class="nav-link" href="post.html"><i class="fa fa-id-card" aria-hidden="true"></i>Post </a>
                                 </li>
 
-                        
-                
+                        <!-- <li> -->
                         </ul>
+                                <form class="form-inline">
+                                        <div class="md-form my-0">
+                                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="myInput" >
+                                        </div>
+                                    </form>
+                        <!-- </li> -->
+                                    <br>
                         <!-- Links -->
                 
                         <a class="nav-link btn btn-outline-white btn-sm my-0" href="#"  id="logout" onclick="logOut()">
@@ -80,97 +185,33 @@
                     <!-- Collapsible content -->
                 
                 </nav>
+                  
+                            <br>
+                            <div id="addpostdata"></div>
+<div id="categoryData"></div>
+                           
+                            
+                           
 
-                <div class=" ">
-<div class="full-bg-img  ">
-<div class="row pt-5 mt-3">
-<div class="col-md-12">
-<div class="text-center">
-<!-- <p>fks</p> -->
-<br>
-<!-- <br> -->
-
-
-<section class="form-simple col-md-6 offset-md-3 text-center targetls wow-fadeInLeft" data-wow-delay="0.3s">
-
-<div class="card targetcard wow-fadeInLeft" data-wow-delay="0.3s">
-
-<!--Header-->
-<div class="header pt-3 targeth3l wow-fadeInLeft" data-wow-delay="0.3s">
-
-<div class="row d-flex justify-content-start ">
- <h3 class="btn-lighten-1 mt-3 mb-4 pb-1 mx-5 font-weight-bold" id="logincontent">Log In</h3>
-</div>
-<!-- <hr class="hr-light wow fadeInRight" data-wow-delay="0.3s"> -->
-
-</div>
-<!--Header-->
-
-<div class="card-outline-white mx-4 mt-4">
-
-<!--Body-->
-<div class="md-form">
- <input type="email" id="loginemail" class="form-control validate forcolor">
- <label>Your email</label>
-</div>
-<br>
-
-<div class="md-form pb-3">
- <input type="password" id="loginpassword" class="form-control validate forcolor">
- <label>Your password</label>
- <p class="font-small grey-text d-flex justify-content-end">Forgot
-     <a href="#" class="dark-grey-text font-weight-bold ml-1"> Password?</a>
- </p>
-</div>
-
-<span id="errormsg"></span>
-
-<div class="text-center mb-4">
- <button type="button" class="btn btn-danger btn-block z-depth-2 loginbtn" id="login" onclick="login()">Log in</button>
-</div>
-<div ><b id="snackbar"></b></div>
-<p class="font-small grey-text d-flex justify-content-center">Don't have an account?
- <a href="signup.html" class="dark-grey-text font-weight-bold ml-1">
-     Sign up</a>
-</p>
-
-
-</div>
-
-</section>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</header>
-
-
-
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                </header>
+            </div>
+    
     <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('sw.js')
+                navigator.serviceWorker.register('../sw.js')
                     .then(function () {
                         console.log('Service Worker Registered');
                     });
             }
         </script>
-
-
-
-
-
-
-
-
-
-
+    
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -184,15 +225,16 @@
         };
         firebase.initializeApp(config);
     </script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+    <script src="script/favourite.js"></script>
     <script src="script/register.js"></script>
-    <script src="script/main.js"></script>
-    <script src="script/submit.js"></script>
     
+    
+    <!-- <script src="../script/main.js"></script> -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="../script/submit.js"></script> -->
 
 </html>

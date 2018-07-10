@@ -20,33 +20,30 @@ function signUp() {
     // console.log(email, password)
 
     if (!signupemail.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-    // setTimeout(()=>{
-        errormsg.innerHTML = "Please enter you email address abc@gmail.com.";    
-    signupemail.onfocus();
-    return false;
-    // swal({
-    //     title: "Warning!",
-    //     text: "Please enter you email address abc@gmail.com. ",
-    //         icon: "warning",
-    //     });
-    
+
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        // x.innerHTML = "Success! You have been logined";
+        x.innerHTML = "Please enter you email address abc@gmail.com.";
+        setTimeout(function () {
+        x.className = x.className.replace("show", "");
+            signupemail.focus();
+            return false;
+        }, 1000);
     }
-    //  if ( signupname.length < 3 ) {
-    //     swal({
-    //         title: "Warning!",
-    //         text: "Please enter you name.",
-    //         icon: "warning",
-    //     });
-    // }
     else if (signuppassword.length < 6) {
-        swal({
-            title: "Warning!",
-            text: "Please enter atleast 6 number",
-            icon: "warning",
-        });
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        // x.innerHTML = "Success! You have been logined";
+        x.innerHTML = "password must be atleast 6 characters";
+        setTimeout(function () {
+        x.className = x.className.replace("show", "");
+            signupemail.focus();
+            return false;
+        }, 1000);
     }
     else {
-        auth.createUserWithEmailAndPassword( signupemail.value, signuppassword.value)
+        auth.createUserWithEmailAndPassword(signupemail.value, signuppassword.value)
             .then(function (data) {
                 // console.log(user.uid);
                 // console.log(user.uid);
@@ -71,19 +68,22 @@ function signUp() {
                 }, 2000);
                 location = '../index.html';
             })
-        
-        
-        
-        
+
+
+
+
             .catch(function (error) {
-                swal({
-                    title: "Warning!",
-                    text: error.message,
-                    icon: "warning",
-                });
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                // x.innerHTML = "Success! You have been logined";
+                x.innerHTML = error.message;
+                setTimeout(function () {
+                x.className = x.className.replace("show", "");
+                    return false;
+                }, 1000);
                 // console.log(error, error.message);
             })
-        }
+    }
 }
 
 
@@ -94,46 +94,30 @@ function login() {
 
     firebase.auth().signInWithEmailAndPassword(loginemail.value, loginpassword.value)
         .then(function (result) {
-            // swal({
-            //     title: "Success!",
-            //     text: "You have logged in successfully",
-            //     icon: "success",
-            // });
-           
-            var cU = auth.currentUser.uid
-            console.log('cuser' , cU );
-            // console.log(result.uid);
-            // setTimeout(() => {
+
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            x.innerHTML = "Success! You have been logined";
+            setTimeout(function () {
+            x.className = x.className.replace("show", "");
+                var cU = auth.currentUser.uid
+                console.log('cuser', cU);
                 window.location = "index.html";
-            // }, 2000);
+            }, 1000);
         })
         .catch(function (error) {
             console.log(error, error.message);
-            swal({
-                title: "Error Occurred!",
-                text: error.message,
-                icon: "error",
-            });
+
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            x.innerHTML = error.message;
+            loginemail.innerHTML = " ";
+            loginpassword.innerHTML = "";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
         });
 }
 
 
-
-firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-        var cU = user.uid;
-        localStorage.setItem('currentUser' , cU);
-        
-        console.log(user.uid);
-
-        $("#logout").show();
-        $("#register").hide();
-    } else {
-        console.log("Please login!..");
-        $("#logout").hide();
-        $("#register").show();
-    }
-});
 
 function logOut() {
     firebase.auth().signOut()
@@ -155,3 +139,20 @@ function logOut() {
             });
         })
 }
+
+
+firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        var cU = user.uid;
+        localStorage.setItem('currentUser', cU);
+
+        console.log(user.uid);
+
+        document.getElementById("logout").style.visibility = "visible";
+    } else {
+        console.log("Please login!..");
+        document.getElementById("logout").style.visibility = "hidden";
+
+    }
+});
+
